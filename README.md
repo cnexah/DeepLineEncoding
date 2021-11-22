@@ -6,11 +6,6 @@ We evaluate deep line encoding on two tasks **seperately**: monocular 3d object 
 For the monocular 3d object detection task, we use only the ImageNet (for pretrain) and the **official training set** to train the model.   
 ## Setup
 Please follow [VisualDet3D](https://github.com/Owen-Liuyuxuan/visualDet3D) to setup the environment.  
-Baiscally:
-```
-pip install -r requirement.txt
-./make.sh
-```
 ## Monocular 3D Object Detection
 Only support a single GPU  
 Please enter the folder  
@@ -29,10 +24,19 @@ python train.py --config=config/config.py
 ```
 Eval:
 ```
-python scripts/eval.py --config=config.py --checkpoint_path=m3d.pth
+python scripts/eval.py --config=config/config.py --checkpoint_path=model.pth
 ```
-## Depth Estimation
+## Depth Prediction
 Please enter the folder
 ```
-cd depth_estimation
+cd depth_prediction
+```
+Train:  
+```
+python scripts/train.py --config=config/config.py # for single GPU
+CUDA_VISIBLE_DEVICES=$GPUS python -m torch.distributed.launch --nproc_per_node=$NUM_GPUS scripts/train.py --config=config/config.py --world_size=$NUM_GPUS # for multiple GPUs
+```
+Eval:
+```
+python scripts/eval.py --config=config/config.py --checkpoint_path=model.pth
 ```
