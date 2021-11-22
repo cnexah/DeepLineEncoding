@@ -5,7 +5,7 @@
 Please follow [VisualDet3D](https://github.com/Owen-Liuyuxuan/visualDet3D) to setup the environment.
 
 ## Monocular 3D Object Detection
-Only support a single GPU
+Only support a single GPU  
 Train:
 ```
 python train.py --config=config/config.py
