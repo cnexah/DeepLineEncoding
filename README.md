@@ -3,18 +3,24 @@
 
 ## Setup
 Please follow [VisualDet3D](https://github.com/Owen-Liuyuxuan/visualDet3D) to setup the environment.  
-Or you can
+Baiscally
 ```
-pip3 install -r requirement.txt
-```
-```
+pip install -r requirement.txt
 ./make.sh
 ```
 ## Monocular 3D Object Detection
 Only support a single GPU  
+Precompute:
+```
+python scripts/imdb_precompute_3d.py --config=config.py
+python scripts/imdb_precompute_test.py --config=config.py
+```
 Train:
 ```
 python train.py --config=config/config.py
 ```
+Eval:
+```
+python scripts/eval.py --config=config.py --checkpoint_path=model.pth --split_to_test="validation"
 
  
