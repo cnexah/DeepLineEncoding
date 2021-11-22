@@ -40,3 +40,27 @@ Eval:
 ```
 python scripts/eval.py --config=config/config.py --checkpoint_path=model.pth
 ```
+## Related Code
+Our code is based on [VisualDet3D](https://github.com/Owen-Liuyuxuan/visualDet3D) and [Deep-Hough-Transform-Line-Priors](https://github.com/yanconglin/Deep-Hough-Transform-Line-Priors)
+
+## Papers
+```
+@inproceedings{ce21dle,
+ author = {Ce Liu and Shuhang Gu and Luc Van Gool and Radu Timofte},
+ booktitle = {Proceedings of the British Machine Vision Conference ({BMVC})},
+ title = {Deep Line Encoding for Monocular 3D Object Detection and Depth Prediction},
+ year = {2021}
+}
+@ARTICLE{9327478,
+  author={Y. {Liu} and Y. {Yuan} and M. {Liu}},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Ground-aware Monocular 3D Object Detection for Autonomous Driving}, 
+  year={2021},
+  doi={10.1109/LRA.2021.3052442}}
+@article{lin2020deep,
+  title={Deep Hough-Transform Line Priors},
+  author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
+  booktitle={European Conference on Computer Vision},
+  year={2020}
+}
+```
