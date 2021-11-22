@@ -1,4 +1,4 @@
-# Deep Line Encoding for Monocular 3D Object Detection and Depth Prediction
+# [Deep Line Encoding for Monocular 3D Object Detection and Depth Prediction](https://www.bmvc2021-virtualconference.com/conference/papers/paper_0299.html)
 >In autonomous driving scenarios, straight lines and vanishing points are important cues for single-image depth perception. In this paper, we propose the deep line encoding to make better use of the line information in scenes. More specifically, we transform potential lines into parameter space through the deep Hough transform. The aggregation of features along a line encodes the semantics of the entire line, whereas the voting location indicates the algebraic parameters. For efficiency, we further propose the novel line pooling to select and encode the most important lines in scenes. With deep line encoding, we advance the state-of-the-art on KITTI single-image 3D object detection and depth prediction benchmarks.
 
 ## Setup
