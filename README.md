@@ -22,5 +22,4 @@ python train.py --config=config/config.py
 Eval:
 ```
 python scripts/eval.py --config=config.py --checkpoint_path=model.pth --split_to_test="validation"
-
- 
+``` 
