@@ -51,12 +51,16 @@ Our code is based on [VisualDet3D](https://github.com/Owen-Liuyuxuan/visualDet3D
  title = {Deep Line Encoding for Monocular 3D Object Detection and Depth Prediction},
  year = {2021}
 }
+```
+```
 @ARTICLE{9327478,
   author={Y. {Liu} and Y. {Yuan} and M. {Liu}},
   journal={IEEE Robotics and Automation Letters}, 
   title={Ground-aware Monocular 3D Object Detection for Autonomous Driving}, 
   year={2021},
   doi={10.1109/LRA.2021.3052442}}
+```
+```
 @article{lin2020deep,
   title={Deep Hough-Transform Line Priors},
   author={Lin, Yancong and Pintea, Silvia L and van Gemert, Jan C},
