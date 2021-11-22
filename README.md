@@ -10,11 +10,11 @@ pip install -r requirement.txt
 ```
 ## Monocular 3D Object Detection
 Only support a single GPU  
-Please modify the path in config/config.py and config/config_test.py
+Please modify the path in config/config.py (for train and val) and config/config_test.py(for test)  
 Precompute:
 ```
 python scripts/imdb_precompute_3d.py --config=config/config.py # for train and validation
-python scripts/imdb_precompute_test.py --config=config/config.py # for test
+python scripts/imdb_precompute_test.py --config=config/config_test.py # for test
 ```
 Train:
 ```
@@ -22,5 +22,5 @@ python train.py --config=config/config.py
 ```
 Eval:
 ```
-python scripts/eval.py --config=config.py --checkpoint_path=m3d.pth --split_to_test="validation"
+python scripts/eval.py --config=config.py --checkpoint_path=m3d.pth
 ``` 
