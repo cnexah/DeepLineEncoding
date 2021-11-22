@@ -3,7 +3,7 @@
 
 ## Setup
 Please follow [VisualDet3D](https://github.com/Owen-Liuyuxuan/visualDet3D) to setup the environment.  
-Baiscally
+Baiscally:
 ```
 pip install -r requirement.txt
 ./make.sh
@@ -12,8 +12,8 @@ pip install -r requirement.txt
 Only support a single GPU  
 Precompute:
 ```
-python scripts/imdb_precompute_3d.py --config=config.py
-python scripts/imdb_precompute_test.py --config=config.py
+python scripts/imdb_precompute_3d.py --config=config.py # for train and validation
+python scripts/imdb_precompute_test.py --config=config.py # for test
 ```
 Train:
 ```
